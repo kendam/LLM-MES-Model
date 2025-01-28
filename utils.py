@@ -5,7 +5,7 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
 #####################################
-# Chapter 2
+# GPTDataSet
 #####################################
 
 
@@ -47,7 +47,7 @@ def create_dataloader_v1(txt, batch_size=4, max_length=256,
 
 
 #####################################
-# Chapter 3
+# MultiHeadAttention
 #####################################
 class MultiHeadAttention(nn.Module):
     def __init__(self, d_in, d_out, context_length, dropout, num_heads, qkv_bias=False):
@@ -106,7 +106,7 @@ class MultiHeadAttention(nn.Module):
 
 
 #####################################
-# Chapter 4
+# LayerNom
 #####################################
 class LayerNorm(nn.Module):
     def __init__(self, emb_dim):
